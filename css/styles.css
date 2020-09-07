@@ -20,6 +20,12 @@ body {
     opacity: 0.8;
     padding: 40px;
 }
+#personalDetails h2{
+    font-weight: bolder;
+}
+label {
+    font-weight: bold;
+}
 #symptoms {
    padding-left: 50px;
    
