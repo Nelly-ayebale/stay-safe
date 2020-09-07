@@ -14,7 +14,28 @@
 
 <body>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <div class="row"></div>
+
         <form id="signup">
             <h2>SIGN-UP FORM</h2>
             <div class="form-group">
@@ -42,22 +63,28 @@
     </div>
     <div class="container">
         <div class="row">
-            <form id="personalDetails">
 
+            <form id="personalDetails" class="pt-5">
+                <h2>ENTER YOUR DETAILS</h2>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    <label for="age">AGE</label>
+                    <input type="number" class="form-control" id="age" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your age with anyone
                         else.</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="city">CITY</label>
+                    <input type="text" class="form-control" id="city" required>
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <div class="form-group">
+                    <label for="street">STREET</label>
+                    <input type="text" class="form-control" id="street" required>
                 </div>
+                <div class="form-group">
+                    <label for="plot">PLOT NUMBER</label>
+                    <input type="number" class="form-control" id="plot" required>
+                </div>
+
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
 
