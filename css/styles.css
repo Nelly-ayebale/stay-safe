@@ -2,5 +2,12 @@ h3 {
     background-color: aqua;
     font-size: 20px;
     font-weight: bolder;
-    padding: 40px;
+    padding: 20px;
+    opacity: 0.8;
+}
+body {
+    background-image: url(../images/sanitizer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
