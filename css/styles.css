@@ -9,7 +9,8 @@ body {
     background-image: url(../images/sanitizer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+  
+   
 }
 .icons li:hover {
     background-color: lightblue;
@@ -20,13 +21,22 @@ body {
     opacity: 0.8;
     padding: 40px;
 }
-#personalDetails h2{
+#personalDetails h2, label{
     font-weight: bolder;
 }
-label {
+h4 {
     font-weight: bold;
+    text-decoration: underline;
+    
 }
 #symptoms {
    padding-left: 50px;
+   background-color: aqua;
+   opacity: 0.8;
+   padding-bottom: 40px;
+   padding-top: 5px;
    
+}
+#symptoms h2 {
+font-weight: bolder;
 }
