@@ -39,55 +39,112 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-md-6">
+                <form id="personalDetails" class="pt-5">
+                    <h2>ENTER YOUR DETAILS</h2>
+                    <div class="form-group">
+                        <label for="age">AGE</label>
+                        <input type="number" class="form-control" id="age" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your age with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">CITY</label>
+                        <input type="text" class="form-control" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="street">ESTATE</label>
+                        <input type="text" class="form-control" id="street" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="plot">HOUSE NUMBER</label>
+                        <input type="number" class="form-control" id="plot" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="plot">HAVE YOU HAD CONTACT WITH AN INFECTED PERSON</label>
+                        <select id="contact" class="form-control">
+                            <option></option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6 pt-5">
+                <form id="symptoms">
 
-            <form id="personalDetails" class="pt-5">
-                <h2>ENTER YOUR DETAILS</h2>
-                <div class="form-group">
-                    <label for="age">AGE</label>
-                    <input type="number" class="form-control" id="age" required>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your age with anyone
-                        else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="city">CITY</label>
-                    <input type="text" class="form-control" id="city" required>
-                </div>
-                <div class="form-group">
-                    <label for="street">ESTATE</label>
-                    <input type="text" class="form-control" id="street" required>
-                </div>
-                <div class="form-group">
-                    <label for="plot">HOUSE NUMBER</label>
-                    <input type="number" class="form-control" id="plot" required>
-                </div>
-                <div class="form-group">
-                    <label for="plot">HAVE YOU HAD CONTACT WITH AN INFECTED PERSON</label>
-                    <select id="contact" class="form-control">
-                        <option></option>
-                        <option>YES</option>
-                        <option>NO</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h2>SYMPTOMS</h2>
-                    <lable for="signs">MOST COMMON SYMPTOMS</lable>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">FEVER</label>
+                    <div class="form-group">
+                        <h2>SYMPTOMS</h2>
+                        <lable for="signs">MOST COMMON SYMPTOMS</lable>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">FEVER</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">DRY COUGH</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">TIREDNESS</label>
+                        </div>
                     </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">DRY COUGH</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">TIREDNESS</label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                    <div class="form-group">
 
+                        <lable for="signs">LESS COMMON SYMPTOMS</lable>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">ACHES AND PAINS</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">SORE THROAT</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">DIARRHOEA</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">LOSS OF TASTE AND SMELL</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">RASH ON SKIN, DISCOLOURATION OF
+                                NAILS</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">CONJUNCTIVITIS</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h2>SYMPTOMS</h2>
+                        <lable for="signs"> SERIOUS SYMPTOMS</lable>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">DIFFICULTY IN BREATHING</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">LOSS OF SPEECH OR MOVEMENT</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">CHEST PAIN AND PRESSURE</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
+
+
+
+
+
+    </div>
     </div>
 </body>
 
