@@ -56,7 +56,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Team
 
-[![Nelly Ayebale](https://github.com/Nelly-ayebale)  
+[Nelly Ayebale](https://github.com/Nelly-ayebale)  
 
 
 
