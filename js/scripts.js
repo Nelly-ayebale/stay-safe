@@ -1,4 +1,3 @@
-
 $('.btn').click(function () {
     $(this).toggleClass("click");
     $('.sidebar').toggleClass("show");
@@ -14,4 +13,8 @@ $('.serv-btn').click(function () {
 $('nav ul li').click(function () {
     $(this).addClass("active").siblings().removeClass("active");
 });
+
+function closeTab() {
+
+}
 
