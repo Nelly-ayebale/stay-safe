@@ -9,8 +9,7 @@ body {
     background-image: url(../images/sanitizer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-  
-   
+    height: 100%;
 }
 .icons li:hover {
     background-color: lightblue;
