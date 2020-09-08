@@ -38,4 +38,7 @@ h4 {
 }
 #symptoms h2 {
 font-weight: bolder;
-}
+};
+#search-form {
+  display: none;
+};
