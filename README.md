@@ -44,7 +44,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## Built with 
 
 - [jQuery](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
-- [CSS](https://developers.google.com/chart/interactive/docs/quick_start) - Simplifies customizing of stylesheet pages using designs.
+- [CSS]- Simplifies customizing of stylesheet pages using designs.
 - [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
 
 
