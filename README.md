@@ -9,8 +9,9 @@
 </table>
 
 ## Author
-
-[Nelly Ayebale](https://github.com/Nelly-ayebale)
+  * List of contributors
+    [Nelly Ayebale](https://github.com/Nelly-ayebale)
+    [LekamCharity](https://github.com/LekamCharity) 
 
 
 ## [Usage](https://Nelly-ayebale.github.io/stay-safe/) 
