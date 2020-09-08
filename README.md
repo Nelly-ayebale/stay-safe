@@ -15,8 +15,7 @@ Here is a working live demo :  https://Nelly-ayebale.github.io/stay-safe/
 
 ## Author
 
-My name is Ayebale Nelly Abigail and I am a student at Moringa school and in this last week of Moringa Prep, I am collaborating with a team of colleagues to build a webapp for a presentation by the end of the week.
-
+[Nelly Ayebale](https://github.com/Nelly-ayebale)
 
 
 ## [Usage](https://Nelly-ayebale.github.io/stay-safe/) 
