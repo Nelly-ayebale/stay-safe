@@ -8,11 +8,6 @@
 </tr>
 </table>
 
-
-## Demo
-Here is a working live demo :  https://Nelly-ayebale.github.io/stay-safe/
-
-
 ## Author
 
 [Nelly Ayebale](https://github.com/Nelly-ayebale)
