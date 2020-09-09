@@ -24,7 +24,18 @@
                 <div class="icons">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><img src="./images/gear.svg"></a>
+                            <div class="popup" onclick="myFunction()"><img src="./images/gear.svg">
+                                <span class="popuptext" id="myPopup">
+                                    <ul>
+                                        <li>To create account, click on create account button</li>
+                                        <li>To login, click on login button</li>
+                                        <li>To check symptoms</li>
+                                        <li>For medication, go to the details form, add your details and submit</li>
+                                        
+                                    </ul>
+                                </span>
+                              </div>
+                            
 
                         </li>
 
@@ -35,7 +46,7 @@
                             <a class="nav-link" href="#"><img src="./images/bell-16.svg"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./images/search-16.svg"></a>
+                            <a class="nav-link" ><img src="./images/search-16.svg"></a>
                            
                               
                         </li>
@@ -136,7 +147,7 @@
                             <label class="custom-control-label" for="customCheck10">DIFFICULTY IN BREATHING</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck11" value=""Seek immediate medical attention if you have serious symptoms. ">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck11" value="Seek immediate medical attention if you have serious symptoms. ">
                             <label class="custom-control-label" for="customCheck11">LOSS OF SPEECH OR MOVEMENT</label>
                         </div>
                         <div class="custom-control custom-checkbox">
@@ -163,7 +174,15 @@ const btn = document.querySelector('#button2');
 btn.addEventListener('click', (event) => {
     alert(getSelectedCheckboxValues('check'));
 });
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+};
+
+
+
     </script>
+
 
 </body>
 
