@@ -1,5 +1,7 @@
 # ![stay-safe](https://Nelly-ayebale.github.io/stay-safe/)
+
 # stay-safe
+
 <table>
 <tr>
 <td>
@@ -8,19 +10,18 @@
 </tr>
 </table>
 
-
 ## Demo
-Here is a working live demo :  https://Nelly-ayebale.github.io/stay-safe/
 
+Here is a working live demo : https://Nelly-ayebale.github.io/stay-safe/
 
 ## Author
 
 [Nelly Ayebale](https://github.com/Nelly-ayebale)
 
-
-## [Usage](https://Nelly-ayebale.github.io/stay-safe/) 
+## [Usage](https://Nelly-ayebale.github.io/stay-safe/)
 
 ### Development
+
 Want to contribute? Great!
 
 To fix a bug or enhance an existing module, follow these steps:
@@ -31,7 +32,7 @@ To fix a bug or enhance an existing module, follow these steps:
 - Add changes to reflect the changes made
 - Commit your changes (`git commit -am 'Improve feature'`)
 - Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request 
+- Create a Pull Request
 
 ### Bug / Feature Request
 
@@ -39,15 +40,14 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 
 If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/Nelly-ayebale/stay-safe/issues/new). Please include sample queries and their corresponding results.
 
-
-## Built with 
+## Built with
 
 - [jQuery](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
 - [CSS]- Simplifies customizing of stylesheet pages using designs.
-- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
-
+- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and Bundled Javascript plugins.
 
 ## To-do
+
 - The application logins in the user.
 - The application takes personel details from the user.
 - The application showcases symptoms of Covid-19 and if the user confirms all or some, toll numbers are displayed to reach out for help.
@@ -55,11 +55,8 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Team
 
-[Nelly Ayebale](https://github.com/Nelly-ayebale)  
+[Nelly Ayebale](https://github.com/Nelly-ayebale)
 
-
-
-
+[sawe-daisy](https://github.com/sawe-daisy)
 
 [MIT](LICENSE) © [Nelly Ayebale ](https://github.com/Nelly-ayebale)
-
