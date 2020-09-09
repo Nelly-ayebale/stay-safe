@@ -14,7 +14,7 @@ h3 {
     opacity: 0.8;
 }
 body {
-    background-image: url(../images/sanitizer.jpg);
+    background-image: url(./images/sanitizer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -88,11 +88,11 @@ font-weight: bolder;
   font-weight: 600;
   line-height: 65px;
   text-align: center;
-  background: blue;
+  background:cyan;
   letter-spacing: 1px;
 }
 nav ul{
-  background:cadetblue;
+  background:lightblue;
   height: 100%;
   width: 100%;
   list-style: none;
@@ -106,7 +106,7 @@ nav ul li:last-child{
 }
 nav ul li a{
   position: relative;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 18px;
   padding-left: 40px;

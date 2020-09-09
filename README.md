@@ -8,12 +8,10 @@
 </tr>
 </table>
 
-## List of Contributors
-[Nelly Ayebale](https://github.com/Nelly-ayebale)
-[Lekam Charity](https://github.com/LekamCharity)
-[Andrew John](https://github.com/andyjohn23)
-[Sawe Daisy](https://github.com/sawe-daisy)
-[Collins Kipkoech](https://github.com/kipkoech-msojo)
+## Author
+  * List of contributors
+    [Nelly Ayebale](https://github.com/Nelly-ayebale)
+    [LekamCharity](https://github.com/LekamCharity) 
 
 
 ## [Usage](https://Nelly-ayebale.github.io/stay-safe/) 
