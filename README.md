@@ -1,4 +1,4 @@
-# ![stay-safe](https://Nelly-ayebale.github.io/stay-safe/)
+# ![stay-safe](https://Nelly-ayebale/stay-safe/)
 # stay-safe
 <table>
 <tr>
@@ -8,9 +8,12 @@
 </tr>
 </table>
 
-## Author
-
+## List of Contributors
 [Nelly Ayebale](https://github.com/Nelly-ayebale)
+[Lekam Charity](https://github.com/LekamCharity)
+[Andrew John](https://github.com/andyjohn23)
+[Sawe Daisy](https://github.com/sawe-daisy)
+[Collins Kipkoech](https://github.com/kipkoech-msojo)
 
 
 ## [Usage](https://Nelly-ayebale.github.io/stay-safe/) 
@@ -50,11 +53,11 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Team
 
-[Nelly Ayebale](https://github.com/Nelly-ayebale)  
-
-
-
-
+[Nelly Ayebale](https://github.com/Nelly-ayebale)
+[Lekam Charity](https://github.com/LekamCharity)
+[Andrew John](https://github.com/andyjohn23)
+[Sawe Daisy](https://github.com/sawe-daisy)
+[Collins Kipkoech](https://github.com/kipkoech-msojo)  
 
 [MIT](LICENSE) © [Nelly Ayebale ](https://github.com/Nelly-ayebale)
 
