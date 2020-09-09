@@ -8,10 +8,13 @@
 </tr>
 </table>
 
-## Author
-  * List of contributors
-    [Nelly Ayebale](https://github.com/Nelly-ayebale)
-    [LekamCharity](https://github.com/LekamCharity) 
+## List of contributors
+ 
+[Nelly Ayebale](https://github.com/Nelly-ayebale)
+[LekamCharity](https://github.com/LekamCharity)
+[Andrew John](https://github.com/andyjohn23)
+[Sawe Daisy](https://github.com/sawe-daisy)
+[Collins Kipkoech](https://github.com/kipkoech-msojo) 
 
 
 ## [Usage](https://Nelly-ayebale.github.io/stay-safe/) 
@@ -58,4 +61,3 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 [Collins Kipkoech](https://github.com/kipkoech-msojo)  
 
 [MIT](LICENSE) © [Nelly Ayebale ](https://github.com/Nelly-ayebale)
-
