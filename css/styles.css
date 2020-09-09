@@ -4,6 +4,11 @@ h3 {
     font-weight: bolder;
     padding: 20px;
     opacity: 0.8;
+
+}
+h3 a:hover {
+  color: black;
+  background-color: aqua;
 }
 body {
     background-image: url(../images/sanitizer.jpg);
