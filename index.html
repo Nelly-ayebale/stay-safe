@@ -40,7 +40,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./images/refresh.svg"></a>
+                            <a class="nav-link" href="#"><img src="./images/refresh.svg" onclick="refreshPage()"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img src="./images/bell-16.svg"></a>
@@ -178,6 +178,10 @@ function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 };
+
+function refreshPage(){
+    window.location.reload();
+} 
 
 
 
