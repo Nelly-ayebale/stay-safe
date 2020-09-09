@@ -18,4 +18,24 @@ function myFunction() {
 
 function refreshPage(){
     window.location.reload();
-} 
+};
+
+
+
+function init() {
+    var count=5;
+    var counter=setInterval(timer,1000);
+        function timer(){
+        console.log('a')
+            count=count-1;
+            if(count==0){
+                alert("Please remember to sanitize, wash your hands regularly, use facemask and keep social distance")
+                    
+                return;
+            } 
+        }
+    }
+    window.onclick = init;
+    window.onresize = init;
+    window.onload = init;
+
