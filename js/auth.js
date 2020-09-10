@@ -1,19 +1,14 @@
 const auth = firebase.auth();
-const db = firebase.firestore();
 
 
 //listening for auth status
 auth.onAuthStateChanged(user => {
     if(user){
-        db.collection("guides").get().then(snapshot => {
-            setupGuides(snapshot.docs);
-        })
+       window.location="user.html";
     }else{
-        setupGuides([]);
+       // window.location="index.html";
     }
 });
-
-
 
 //sign up
 const signupform = document.querySelector("#signupform");

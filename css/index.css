@@ -124,12 +124,25 @@ h5 {
     border-collapse: collapse;
     width: 90%;
 }
+.signupform form input{
+    width: 100%;
+    height: 40px;
+}
+.userform .signuptrigger{
+    float: right;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.userform .logintrigger{
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+}
 
 .carousel-item {
     /* margin-top: 50px; */
     height: 600px;
 }
-
 
 .carousel-item img {
     position: absolute;
