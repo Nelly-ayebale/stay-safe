@@ -39,4 +39,5 @@ function init() {
     window.onresize = init;
     window.onload = init;
     window.onclick("#notify-me") = init;
+    window.onclick("#button1") = init;
 
