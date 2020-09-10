@@ -4,6 +4,11 @@ h3 {
     font-weight: bolder;
     padding: 20px;
     opacity: 0.8;
+
+}
+h3 a:hover {
+  color: black;
+  background-color: aqua;
 }
 body {
     background-image: url(../images/sanitizer.jpg);
@@ -11,6 +16,7 @@ body {
     background-repeat: no-repeat;
     height: 100%;
 }
+
 .icons li:hover {
     background-color: lightblue;
     
@@ -18,7 +24,8 @@ body {
 #personalDetails {
     background-color: aqua;
     opacity: 0.8;
-    padding: 40px;
+    padding: 20px;
+    display: none;
 }
 #personalDetails h2, label{
     font-weight: bolder;
@@ -28,14 +35,37 @@ h4 {
     text-decoration: underline;
     
 }
+
 #symptoms {
    padding-left: 50px;
    background-color: aqua;
    opacity: 0.8;
    padding-bottom: 40px;
    padding-top: 5px;
-   
+   display: none;
 }
 #symptoms h2 {
 font-weight: bolder;
 }
+
+#navigation {
+  color: white;
+  font-weight: bolder;
+}
+#navigation a:hover{
+  color: aqua;
+  background-color: black;
+}
+#now{
+  font-size: 30px;
+  font-weight: bolder;
+}
+#next{
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 2em;
+}
+
+
+
+
