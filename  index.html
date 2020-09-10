@@ -11,48 +11,72 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <script src="./js/scripts.js"></script>
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
+    <div class="header">
+      <nav class="navbar ">
+        <a class="navbar-brand" href="/"
+          ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+        </div>
+      </nav>
+    </div>
     <div class="container-fluid">
-      <div class="aside">
-        <div class="logo">
-          <a href="#">stay-safe</a>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="aside">
+            <div class="logo">
+              <a href="#">SANITIZING<img src="./images/pexels-vova-krasilnikov-3968083.jpg" class="stay-logo" alt=""
+                /></a>
+            </div>
+            <div class="copyright-text">
+              &copy; Web Template2020
+            </div>
+          </div>
         </div>
-        <div class="copyright-text">
-          &copy; Web Template2020
-        </div>
-      </div>
-      <div class="box-container">
-        <div class="carousel">
+        <div class="col-md-6">
           <div
-            id="carouselExampleIndicators"
+            id="carouselExampleCaptions"
             class="carousel slide"
             data-ride="carousel"
           >
             <ol class="carousel-indicators">
               <li
-                data-target="#carouselExampleIndicators"
+                data-target="#carouselExampleCaptions"
                 data-slide-to="0"
                 class="active"
               ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  class="d-block w-50"
-                  src="./images/pexels-anna-shvets-3786157.jpg"
-                  alt="First slide"
+                  src="./images/pexels-anna-shvets-3962516.jpg"
+                  class="d-block w-100 slider-img img-fluid"
+                  alt="..."
                 />
                 <div class="carousel-caption d-none d-md-block">
                   <h5>COVID19</h5>
@@ -66,9 +90,9 @@
               </div>
               <div class="carousel-item">
                 <img
-                  class="d-block w-50"
-                  src="./images/pexels-anna-shvets-3962516.jpg"
-                  alt="Second slide"
+                  src="./images/pexels-anna-shvets-3786157.jpg"
+                  class="d-block w-100 slider-img img-fluid"
+                  alt="..."
                 />
                 <div class="carousel-caption d-none d-md-block">
                   <h5>How It spreads</h5>
@@ -82,9 +106,9 @@
               </div>
               <div class="carousel-item">
                 <img
-                  class="d-block w-50"
                   src="./images/sanitizer.jpg"
-                  alt="Third slide"
+                  class="d-block w-100 slider-img img-fluid"
+                  alt="..."
                 />
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Stay safe</h5>
@@ -99,7 +123,7 @@
             </div>
             <a
               class="carousel-control-prev"
-              href="#carouselExampleIndicators"
+              href="#carouselExampleCaptions"
               role="button"
               data-slide="prev"
             >
@@ -111,7 +135,7 @@
             </a>
             <a
               class="carousel-control-next"
-              href="#carouselExampleIndicators"
+              href="#carouselExampleCaptions"
               role="button"
               data-slide="next"
             >
@@ -123,38 +147,104 @@
             </a>
           </div>
         </div>
-        <div class="buttons">
-          <h4>sign in</h4>
-          <div id="button1">
-            <button type="button" class="btn btn-primary">
-              <div class="LoginButton__titleContainer">
-                <i class="fa fa-facebook" style="color: white;"></i>Continue
-                with Facebook
-              </div>
-              <div class="AppLoginButton__subtitleContainer">
-                We’ll never post on your behalf
-              </div>
+        <div class="col-md-3">
+          <div class="buttons">
+            <h4>sign in</h4>
+            <button
+              id="buttony"
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              data-whatever="@mdo"
+            >
+              <i class="fa fa-facebook" style="color: white;"></i>Continue with
+              Facebook<br />We’ll never post on your behalf
             </button>
-          </div>
-          <div id="button2">
-            <button type="button" class="btn btn-info">
-              <div class="LoginButton__titleContainer">
-                <i class="fa fa-google"></i>Continue with Google
-              </div>
-              <div class="AppLoginButton__subtitleContainer">
-                Secure log-in
-              </div>
+            <button
+              id="buttony"
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              data-whatever="@fat"
+            >
+              <i class="fa fa-google"></i>Continue with Google <br />Secure
+              log-in
             </button>
-          </div>
-          <div id="button3">
-            <button type="button" class="btn btn-light">
-              <div class="LoginButton__titleContainer">
-                Continue with Email or Apple
-              </div>
-              <div class="AppLoginButton__subtitleContainer">
-                Secure log-in
-              </div>
+            <button
+              id="buttony"
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              data-whatever="@getbootstrap"
+            >
+              Continue with Email or Apple
             </button>
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Enter your details
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                        <small id="emailHelp" class="form-text text-muted"
+                          >We'll never share your email with anyone else.</small
+                        >
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="terms">
             <p>
@@ -165,8 +255,8 @@
         </div>
       </div>
       <div class="cont hidden">
-        <form>
-          <div class="form-group">
+        <form id="form">
+          <div class="form-group" id="form">
             <label for="exampleInputEmail1">Email address</label>
             <input
               type="email"
@@ -201,6 +291,11 @@
           <button type="submit">Login</button>
         </div>
       </form>
+    </div>
+    <div class="footer">
+      &copy; COVID-19<br />
+      follow safety precautions<br />
+      save lives
     </div>
   </body>
 </html>
