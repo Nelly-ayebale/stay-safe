@@ -46,7 +46,68 @@ h4 {
 }
 #symptoms h2 {
 font-weight: bolder;
-}
+};
+#search-form {
+  display: none;
+};
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    padding: 50px 0 0 0;
+    position: absolute;
+    margin-top: 200px;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 0px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  };
 
 #navigation {
   color: white;
@@ -56,20 +117,50 @@ font-weight: bolder;
   color: aqua;
   background-color: black;
 }
+
 #now{
   font-size: 30px;
   font-weight: bolder;
   padding-right: 10px;
+
+.settingsform{
+  display: none;
+  position: relative;
+
 }
-#next{
-  font-size: 30px;
-  font-weight: bolder;
-  line-height: 2em;
+.settingsform .card1{
+  float: right;
+  height: 300px;
+  margin-right: 10%;
+  margin-top: 1%;
+  border-radius: 10px;
+  background-color: white;
 }
+.settingsform .card1 h5{
+  font-size: 15px;
+  color: grey;
+  border-bottom: 1px solid grey;
+  padding: 10px 10px;
+}
+.settingsform .card1 a{
+ display: block;
+ font-size: 15px;
+ text-decoration: none;
+ color: black;
+}
+.settingsform button{
+  margin-top: 40%;
+}
+.settingsform .card1 .card1-header{
+  font-size: 24px;
+  padding: 10px 10px;
+}
+
 .list-group li{
   line-height: 2em;
   margin-left: 10px;
 }
+
 
 
 
