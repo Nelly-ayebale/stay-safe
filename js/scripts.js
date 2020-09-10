@@ -23,6 +23,14 @@ $(document).ready(function () {
     $("#signs").click(function () {
         $("form#symptoms").toggle();
     });
+    $("#to-day").click(function () {
+        $("form#today").toggle()
+    });
+    $("#next").click(function () {
+        $("form#next-days").toggle();
+
+    });
+
 
 });
 

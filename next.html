@@ -18,6 +18,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SANITIZING APP</title>
@@ -33,8 +35,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a href="./index.html">Home</a>
+
+
+
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -42,7 +53,8 @@
                             Calendar
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" id="calendar" type="calendar"></a>
+                            <a href="./calender.html">Calendar</a>
+
 
 
                         </div>
@@ -53,11 +65,12 @@
                             Shortcuts
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="today.html">Today</a>
-                            <a class="dropdown-item" href="next.html">Next 7 days</a>
+                            <a class="dropdown-item" href="#">Today</a>
+                            <a class="dropdown-item" href="#">Next 7 days</a>
 
                         </div>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -79,12 +92,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-center">Stay.safe needs your permission <a href="#">to enable reminders and
-                        notifications</a>
+                <h3 class="text-center">
+                    <marquee width="60%" direction="left" height="30px">
+                        Stay.safe needs your permission <a href="#">to enable reminders and
+                            notifications</a>
+                    </marquee>
                 </h3>
             </div>
         </div>
     </div>
+
 
     <div class="container">
         <div class="row">
@@ -93,7 +110,7 @@
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
 
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Settings"
+                            <a href="#" id="settingsbutton" data-toggle="tooltip" data-placement="top" title="Settings"
                                 class="pr-4 pl-3"><img src="./images/gear.svg"></a>
 
                         </li>
@@ -107,25 +124,204 @@
                             <a href="#" data-toggle="tooltip" data-placement="left" title="notifications"
                                 class="pr-4 pl-3"><img src="./images/bell-16.svg"></a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="search"
-                                class="pl-4 pr-3"><img src="./images/search-16.svg"></a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div id="next">
-        <p>Monday</p>
-        <p>Tuesday</p>
-        <p>Wednesday</p>
-        <p>Thursday</p>
-        <p>Friday</p>
-        <p>Saturday</p>
-        <p>Sunday</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <form id="personalDetails" class="form-form">
+                    <h2>ENTER YOUR DETAILS</h2>
+                    <div class="form-group">
+                        <label for="age">AGE</label>
+                        <input type="number" class="form-control" id="age" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your age with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">CITY</label>
+                        <input type="text" class="form-control" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="street">ESTATE</label>
+                        <input type="text" class="form-control" id="street" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="plot">HOUSE NUMBER</label>
+                        <input type="number" class="form-control" id="plot" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="plot">HAVE YOU HAD CONTACT WITH AN INFECTED PERSON</label>
+                        <select id="contact" class="form-control">
+                            <option></option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="button1">Submit</button>
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form id="symptoms" class="form-form">
+
+                    <div class="form-group">
+                        <h2>SYMPTOMS</h2>
+                        <h4>MOST COMMON SYMPTOMS</h4>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck1"
+                                value="Stay hydrated. Fevers usually cause sweating, which means loss of water from your body.">
+                            <label class="custom-control-label" for="customCheck1">FEVER</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck2"
+                                value="take plenty of fluids">
+                            <label class="custom-control-label" for="customCheck2">DRY COUGH</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck3"
+                                value="get enough vitamin D and enough rest">
+                            <label class="custom-control-label" for="customCheck3">TIREDNESS</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <h4>LESS COMMON SYMPTOMS</h4>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck4"
+                                value="Stay hydrated, especially on days when you’re active">
+                            <label class="custom-control-label" for="customCheck4">ACHES AND PAINS</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck5"
+                                value="Drink warm liquids that feel soothing to the throat, such as hot tea with honey, soup broth, or warm water with lemon">
+                            <label class="custom-control-label" for="customCheck5">SORE THROAT</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck6"
+                                value="Antibiotics might help treat diarrhea caused by bacteria or parasites.">
+                            <label class="custom-control-label" for="customCheck6">DIARRHOEA</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck7"
+                                value="The doctor will take a complete medical history and give you a thorough physical examination.">
+                            <label class="custom-control-label" for="customCheck7">LOSS OF TASTE AND SMELL</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck8"
+                                value="try to lose weight to eliminate excess skin folds">
+                            <label class="custom-control-label" for="customCheck8">RASH ON SKIN, DISCOLOURATION OF
+                                NAILS</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck9"
+                                value=" drugs that help control inflammation, such as decongestants, steroids and anti-inflammatory drops.">
+                            <label class="custom-control-label" for="customCheck9">CONJUNCTIVITIS</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <h4> SERIOUS SYMPTOMS</h4>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck10"
+                                value="Take slow breaths. Slowing things down can help you start breathing again properly.">
+                            <label class="custom-control-label" for="customCheck10">DIFFICULTY IN BREATHING</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck11"
+                                value="Seek immediate medical attention if you have serious symptoms. ">
+                            <label class="custom-control-label" for="customCheck11">LOSS OF SPEECH OR MOVEMENT</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="check" id="customCheck12"
+                                value="Antidepressants. If you're experiencing panic attacks, your doctor may prescribe antidepressants to help control your symptoms.">
+                            <label class="custom-control-label" for="customCheck12">CHEST PAIN AND PRESSURE</label>
+                        </div>
+                    </div>
+                    <button id="button2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="settingsform" id="settings">
+                    <div class="card1" style="width:25%" ;>
+                        <div class="card1-header" style="font-size: 20px; color: black;">
+                            Settings
+                        </div>
+                        <div class="card1-body">
+                            <h5 class="card-title" disabled>ACCOUNT</h5>
+                            <div class="accountdetail">
+
+                            </div>
+                        </div>
+                        <center><a href="#"><button type="submit" id="logout"
+                                    class="btn btn-primary">Logout</button></a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="js/andrew.js"></script>
+    <!-- 
+    <div class="container">
+        <div class="row">
+            <form id="today">
+                <ul class="list-group">
+                    <div class="col-md-12">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Monday
+                            <span class="badge badge-primary badge-pill ml-5">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Tuesday
+                            <span class="badge badge-primary badge-pill">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Wednesday
+                            <span class="badge badge-primary badge-pill">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Thursday
+                            <span class="badge badge-primary badge-pill ml-5">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Friday
+                            <span class="badge badge-primary badge-pill">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Saturday
+                            <span class="badge badge-primary badge-pill">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Sunday
+                            <span class="badge badge-primary badge-pill">0</span>
+                        </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <form id="next-days">
+        <div id="next">
+            <p>Monday</p>
+            <p>Tuesday</p>
+            <p>Wednesday</p>
+            <p>Thursday</p>
+            <p>Friday</p>
+            <p>Saturday</p>
+            <p>Sunday</p>
+        </div>
+    </form> -->
+    <script src="js/scripts.js"></script>
 </body>
+
 
 </html>
