@@ -1,14 +1,16 @@
 const auth = firebase.auth();
-
+const db = firebase.firestore();
 
 //listening for auth status
 auth.onAuthStateChanged(user => {
     if(user){
-       window.location="user.html";
+        window.location="user.html";
     }else{
-       // window.location="index.html";
+       //window.location="index.html";
     }
-});
+})
+
+
 
 //sign up
 const signupform = document.querySelector("#signupform");
@@ -46,20 +48,3 @@ loginForm.addEventListener("click", (e) =>{
     });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
