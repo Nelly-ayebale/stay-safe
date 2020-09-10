@@ -16,9 +16,13 @@ function myFunction() {
   popup.classList.toggle("show");
 };
 
-function refreshPage(){
-    window.location.reload();
-};
+function modal(){
+    $('.modal').modal('show');
+    setTimeout(function () {
+        console.log('hejsan');
+        $('.modal').modal('hide');
+    }, 3000);
+ }
 
 
 
@@ -35,9 +39,12 @@ function init() {
             } 
         }
     }
-    window.onclick = init;
-    window.onresize = init;
-    window.onload = init;
-    window.onclick("#notify-me") = init;
-    window.onclick("#button1") = init;
+    //window.onclick = init;
+    //window.onresize = init;
+   // window.onload = init;
+   // window.onclick("#notify-me") = init;
+    //window.onclick("#button1") = init;
+
+    
+    
 
