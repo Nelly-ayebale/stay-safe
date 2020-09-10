@@ -56,6 +56,37 @@ font-weight: bolder;
   color: aqua;
   background-color: black;
 }
+.settingsform{
+  display: none;
+  position: relative;
+}
+.settingsform .card1{
+  float: right;
+  height: 300px;
+  margin-right: 10%;
+  margin-top: 1%;
+  border-radius: 10px;
+  background-color: white;
+}
+.settingsform .card1 h5{
+  font-size: 15px;
+  color: grey;
+  border-bottom: 1px solid grey;
+  padding: 10px 10px;
+}
+.settingsform .card1 a{
+ display: block;
+ font-size: 15px;
+ text-decoration: none;
+ color: black;
+}
+.settingsform button{
+  margin-top: 40%;
+}
+.settingsform .card1 .card1-header{
+  font-size: 24px;
+  padding: 10px 10px;
+}
 
 
 

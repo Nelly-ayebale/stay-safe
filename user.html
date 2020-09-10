@@ -17,6 +17,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SANITIZING APP</title>
@@ -78,8 +80,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-center">Stay.safe needs your permission <a href="#">to enable reminders and
-                        notifications</a>
+                <h3 class="text-center">
+                    <marquee width="60%" direction="left" height="30px">
+                        Stay.safe needs your permission <a href="#">to enable reminders and
+                            notifications</a>
+                    </marquee>
                 </h3>
             </div>
         </div>
@@ -92,7 +97,7 @@
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
 
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Settings"
+                            <a href="#" id="settingsbutton" data-toggle="tooltip" data-placement="top" title="Settings"
                                 class="pr-4 pl-3"><img src="./images/gear.svg"></a>
 
                         </li>
@@ -105,10 +110,6 @@
                         <li class="nav-item">
                             <a href="#" data-toggle="tooltip" data-placement="left" title="notifications"
                                 class="pr-4 pl-3"><img src="./images/bell-16.svg"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="search"
-                                class="pl-4 pr-3"><img src="./images/search-16.svg"></a>
                         </li>
                     </ul>
                 </div>
@@ -227,7 +228,30 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="settingsform" id="settings">
+                    <div class="card1" style="width:25%" ;>
+                        <div class="card1-header" style="font-size: 20px; color: black;">
+                            Settings
+                        </div>
+                        <div class="card1-body">
+                            <h5 class="card-title" disabled>ACCOUNT</h5>
+                            <div class="accountdetail">
+
+                            </div>
+                        </div>
+                        <center><a href="#"><button type="submit" id="logout"
+                                    class="btn btn-primary">Logout</button></a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/scripts.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
