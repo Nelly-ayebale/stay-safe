@@ -1,5 +1,7 @@
-# ![stay-safe](https://Nelly-ayebale.github.io/stay-safe/)
+
+# ![stay-safe](https://Nelly-ayebale/stay-safe/)
 # stay-safe
+
 <table>
 <tr>
 <td>
@@ -9,18 +11,19 @@
 </table>
 
 
-## Demo
-Here is a working live demo :  https://Nelly-ayebale.github.io/stay-safe/
+## List of contributors
+ 
+- [Nelly Ayebale](https://github.com/Nelly-ayebale)
+- [LekamCharity](https://github.com/LekamCharity)
+- [Andrew John](https://github.com/andyjohn23)
+- [Sawe Daisy](https://github.com/sawe-daisy)
+- [Collins Kipkoech](https://github.com/kipkoech-msojo) 
 
 
-## Author
-
-[Nelly Ayebale](https://github.com/Nelly-ayebale)
-
-
-## [Usage](https://Nelly-ayebale.github.io/stay-safe/) 
+## [Usage](https://Nelly-ayebale.github.io/stay-safe/)
 
 ### Development
+
 Want to contribute? Great!
 
 To fix a bug or enhance an existing module, follow these steps:
@@ -31,7 +34,7 @@ To fix a bug or enhance an existing module, follow these steps:
 - Add changes to reflect the changes made
 - Commit your changes (`git commit -am 'Improve feature'`)
 - Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request 
+- Create a Pull Request
 
 ### Bug / Feature Request
 
@@ -39,15 +42,14 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 
 If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/Nelly-ayebale/stay-safe/issues/new). Please include sample queries and their corresponding results.
 
-
-## Built with 
+## Built with
 
 - [jQuery](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
 - [CSS]- Simplifies customizing of stylesheet pages using designs.
-- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
-
+- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and Bundled Javascript plugins.
 
 ## To-do
+
 - The application logins in the user.
 - The application takes personel details from the user.
 - The application showcases symptoms of Covid-19 and if the user confirms all or some, toll numbers are displayed to reach out for help.
@@ -55,11 +57,11 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Team
 
-[Nelly Ayebale](https://github.com/Nelly-ayebale)  
-
-
-
+- [Nelly Ayebale](https://github.com/Nelly-ayebale)
+- [Lekam Charity](https://github.com/LekamCharity)
+- [Andrew John](https://github.com/andyjohn23)
+- [Sawe Daisy](https://github.com/sawe-daisy)
+- [Collins Kipkoech](https://github.com/kipkoech-msojo)  
 
 
 [MIT](LICENSE) © [Nelly Ayebale ](https://github.com/Nelly-ayebale)
-

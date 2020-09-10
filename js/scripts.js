@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function getSelectedCheckboxValues(name) {
     const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
     let values = [];
@@ -54,4 +55,22 @@ function init() {
         });
     }); 
     
+=======
+$(document).ready(function () {
+    $("#button2").click(function () {
+        $("#form").toggle()
+    });
+    $("#personal").click(function () {
+        $("form#personalDetails").toggle();
+
+    });
+    $("#signs").click(function () {
+        $("form#symptoms").toggle();
+    });
+
+});
+
+
+
+>>>>>>> master
 
