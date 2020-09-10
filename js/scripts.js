@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $("#button2").click(function () {
+        $("#form").toggle()
+    });
     $("#personal").click(function () {
         $("form#personalDetails").toggle();
 
@@ -7,5 +10,8 @@ $(document).ready(function () {
         $("form#symptoms").toggle();
     });
 
-})
+});
+
+
+
 
