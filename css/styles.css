@@ -117,9 +117,16 @@ font-weight: bolder;
   color: aqua;
   background-color: black;
 }
+
+#now{
+  font-size: 30px;
+  font-weight: bolder;
+  padding-right: 10px;
+
 .settingsform{
   display: none;
   position: relative;
+
 }
 .settingsform .card1{
   float: right;
@@ -148,5 +155,12 @@ font-weight: bolder;
   font-size: 24px;
   padding: 10px 10px;
 }
+
+.list-group li{
+  line-height: 2em;
+  margin-left: 10px;
+}
+
+
 
 
