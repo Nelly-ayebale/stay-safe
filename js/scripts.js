@@ -22,7 +22,10 @@ function modal(){
         console.log('hejsan');
         $('.modal').modal('hide');
     }, 3000);
- }
+ };
+ function refreshPage(){
+    window.location.reload();
+};
 
 
 
@@ -45,6 +48,10 @@ function init() {
    // window.onclick("#notify-me") = init;
     //window.onclick("#button1") = init;
 
-    
+    $(document).ready(function() {
+        $('#button-refresh').click(function(){
+            $('#overlay-refresh').fadeIn().delay(2000).fadeOut();
+        });
+    }); 
     
 
